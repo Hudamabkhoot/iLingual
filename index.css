@@ -1,0 +1,279 @@
+:root {
+--silver: #A6A7A6ff;
+--dark-slate-gray: #385A65ff;
+--gunmetal: #192E35ff;
+--salmon: #FA8069ff;
+--platinum: #E0E0E0ff;
+}
+
+
+body {
+    color: #2b283a;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* ----- TYPOGRAPHY ----- */
+
+h1, 
+h3 {
+    margin: 0;
+}
+
+h1 {
+    color: var(--salmon);
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: var(--gunmetal);
+    font-size: 1.375rem;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.section-two h2 {
+    color: var(--gunmetal);
+}
+
+.section-two p {
+    color: var(--gunmetal);
+}
+
+/* ----- LINKS ----- */
+
+
+a:hover, 
+a:active {
+    color: var(--salmon);
+}
+
+.btn {
+    font-size: 1.125rem;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    border-radius: 4.6px;
+}
+
+.btn-dark, .btn-light {
+    color: var(--platinum);
+    background: var(--dark-slate-gray);
+}
+
+.btn-mid {
+    color: var(--dark-slate-gray); 
+    background: var(--salmon); 
+}
+
+.btn-light {
+    color: var(--platinum); 
+    background: var(--gunmetal);
+}
+
+.btn:hover, 
+.btn:active {
+    color: var(--gunmetal);
+    background-color: var(--silver);
+}
+
+/* ----- LAYOUT ----- */
+
+header, 
+section, 
+footer {
+    padding: 1.25em 0;
+}
+
+.fa-book {
+    margin-right: 0.5rem;
+}
+
+.section-two {
+    color: whitesmoke;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-image {
+    width: 100%;
+    display: block;
+    margin: 0 auto 2em;
+}
+
+.section-two-image-container {
+    gap: 1em;
+}
+
+.section-one-text-container {
+    text-align: center;
+}
+
+.feature-image {
+    width: 100%;
+    border-radius: 4.6px;
+}
+
+.feature-item {
+    flex: 1 260px;
+}
+
+footer {
+    text-align: center;
+    color: var(--gunmetal);
+}
+
+
+/* ----- NAVIGATION ----- */
+
+nav a {
+    color: var(--platinum);
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding: 0.85em 0;
+    display: block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (max-width: 774px) {
+    header {
+        text-align: center;
+        background: var(--gunmetal)
+    }
+
+    nav {
+        margin-top: 2em;
+    }
+
+    li:not(:last-child) {
+        border-bottom: 1px dotted var(--dark-slate-gray);
+    } 
+
+}
+
+
+
+@media (min-width: 775px) {
+    header,
+    section,
+    footer {
+        padding: 2.875em 0;        
+    }
+    
+    header .container,
+    nav ul {
+        display: flex;
+    }
+    
+    header .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .container {
+        max-width: 1248px;
+    }
+    
+    nav li {
+        margin-left: 1.25em;
+    }
+    
+    nav a {
+    color: var(--gunmetal);
+    font-weight: lighter;
+}
+    
+    nav a:hover, 
+    nav a:active {
+    text-decoration: underline;
+    }   
+    
+    .btn {
+        display: inline-block;
+        margin-right: 0.5em;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        text-align: center
+    }
+    
+    
+    p {
+        font-size: 1.125rem;
+    }
+    
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1rem;
+    }
+
+     .main-image {
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .section-one-text-container {
+        text-align: center;
+        margin: 1.5rem;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .section-two-image-container {
+        margin: 0 auto;
+        width: 90%;
+    }
+     
+    .feature-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+    
+    .feature-item-image {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .feature-item-text{
+        margin: 1rem;
+        width: 70%;
+    }
+    
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    
+}
