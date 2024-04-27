@@ -21,4 +21,4 @@
 
 ## Live Demo
 
-- Live Site URL: [Here](https://hudamab95.github.io/iLingual/)
+- Live Site URL: [Here](https://ilingual.netlify.app/)
